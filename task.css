@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: #ff9a9e; }
+    25% { background-color: #fad0c4; }
+    50% { background-color: #fad0c4; }
+    75% { background-color: #ff9a9e; }
+    100% { background-color: #ff9a9e; }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.points {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.task-list li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.task-list li button {
+    background-color: #28a745;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-list li.completed button {
+    background-color: #6c757d;
+}
+
+.task-list li button:hover {
+    background-color: #218838;
+}
+
+.task-list li.completed button:hover {
+    background-color: #5a6268;
+}
+
+.cooldown-message {
+    color: red;
+    margin-top: 20px;
+    display: none;
+}
