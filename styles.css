@@ -1,0 +1,123 @@
+
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    margin: 0;
+}
+
+.home-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.signup-form, .login-form, .profile, .tasks, .coming-soon {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.signup-form h2, .login-form h2, .profile h2, .tasks h2, .coming-soon h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form input, .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-form button, .login-form button, .tasks button, .refer button {
+    width: 100%;
+    padding: 10px;
+    background: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup-form button:hover, .login-form button:hover, .tasks button:hover, .refer button:hover {
+    background: #e67e22;
+}
+
+.task, .other-earnings {
+    margin-top: 20px;
+}
+
+.task p {
+    font-size: 18px;
+}
+
+.profile-info p, .refer {
+    margin: 10px 0;
+}
+
+.refer button {
+    margin-top: 20px;
+}
